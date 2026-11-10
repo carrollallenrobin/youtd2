@@ -6,14 +6,10 @@ name: build-and-publish
 # to do it. It only adds executable and .pck file to the
 # zip.
 
-# on:
-#   push:
-#     # Sequence of patterns matched against refs/heads
-#     # branches:
-#     #   - workflow*
-#     # Sequence of patterns matched against refs/tags
-#     tags:
-#       - v*
+on:
+  push:
+    tags:
+      - "v*"
 
 jobs:
   setup:

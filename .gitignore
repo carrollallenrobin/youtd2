@@ -421,6 +421,21 @@ override.cfg
 
 # Other
 *.exe
+
+# Keep project assets in Git so CI builds do not depend on Google Drive.
+!/assets/**/*.gif
+!/assets/**/*.ico
+!/assets/**/*.jpg
+!/assets/**/*.png
+!/assets/**/*.psd
+!/assets/**/*.webp
+!/assets/**/*.woff2
+!/assets/**/*.otf
+!/assets/**/*.ttf
+!/assets/**/*.mp3
+!/assets/**/*.wav
+!/assets/**/*.ogg
+
+# Never publish private moderation/configuration data.
 /assets/secrets/secrets.csv
 /assets/secrets/badwords.csv
-/assets/texts/texts.csv
